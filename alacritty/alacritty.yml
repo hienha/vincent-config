@@ -1,3 +1,8 @@
+shell:
+    program: /usr/local/bin/tmux
+    args:
+     - -u # force UTF-8 in tmux
+
 font:
   size: 14.0
   # The normal (roman) font face to use.
