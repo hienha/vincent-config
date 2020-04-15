@@ -1,7 +1,7 @@
 shell:
-    program: /usr/local/bin/tmux
+    program: /Users/changfeng/Applications/tmux-3.0a/bin/tmux
     args:
-     - -u # force UTF-8 in tmux
+      - -u # force UTF-8 in tmux
 
 font:
   size: 14.0
@@ -57,7 +57,7 @@ scrolling:
   history: 10000
   multiplier: 3
 
-background_opacity: 0.90
+  # background_opacity: 0.9
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
