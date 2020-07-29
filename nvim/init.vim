@@ -131,6 +131,9 @@ Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-match-highlight'
 Plug 'ncm2/ncm2-markdown-subscope'
 
+" Python highlight
+Plug 'numirias/semshi'
+
 call plug#end()
 
 " Clipboard
