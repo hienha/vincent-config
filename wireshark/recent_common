@@ -12,12 +12,15 @@ recent.capture_file: /Users/changfeng/Downloads/2019-05-29-11_51_32-106.75.70.12
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: tcp.stream eq 23
+recent.display_filter: ip.src == 192.168.50.35 and ip.dst == 192.168.10.125
+recent.display_filter: ip.src == 192.168.50.35
 recent.display_filter: tcp.stream eq 1
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 419
-gui.geometry_main_y: 114
+gui.geometry_main_x: 303
+gui.geometry_main_y: 122
 gui.gtk.geometry_main_x: 20
 gui.gtk.geometry_main_y: 20
 gui.geometry_main_width: 1402

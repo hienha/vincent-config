@@ -59,15 +59,15 @@ gui.bytes_view: 0
 
 # Main window upper (or leftmost) pane size.
 # Decimal number.
-gui.geometry_main_upper_pane: 411
+gui.geometry_main_upper_pane: 167
 
 # Main window middle pane size.
 # Decimal number.
-gui.geometry_main_lower_pane: 102
+gui.geometry_main_lower_pane: 427
 
 # Packet list column pixel widths.
 # Each pair of strings consists of a column format and its pixel width.
-column.width: %m, -1, %t, -1, %s, -1, %d, -1, %p, -1, %L, -1, %i, 767
+column.width: %m, -1, %t, -1, %s, -1, %d, -1, %p, -1, %L, -1, %i, 718
 
 # Open conversation dialog tabs.
 # List of conversation names, e.g. "TCP", "IPv6".
