@@ -234,7 +234,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exec "normal! 
 " Theme
 "  Window Transparent
 " let g:SnazzyTransparent = 1
-colorscheme snazzy
+" colorscheme snazzy
 set t_Co=256
 set background=light
 " colorscheme dracula
@@ -256,7 +256,7 @@ noremap <LEADER><CR> :nohlsearch<CR>
 " noremap l u
 " noremap L U
 
-map ; :
+" map ; :
 map s <nop>
 map S :w<CR>
 map Q :q<CR>
