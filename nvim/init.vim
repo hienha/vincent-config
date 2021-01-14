@@ -131,9 +131,6 @@ Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-match-highlight'
 Plug 'ncm2/ncm2-markdown-subscope'
 
-" Python highlight
-Plug 'numirias/semshi'
-
 call plug#end()
 
 " Clipboard
@@ -174,7 +171,9 @@ set shiftwidth=2
 set softtabstop=2
 " 显示隐藏字符
 set list
-set listchars=tab:▶\ ,trail:▬
+set listchars=eol:¬,tab:▶\ ·,trail:•,extends:>,precedes:<,space:␣
+" set listchars=tab:▶\ ,trail:•
+
 " 屏幕滚动上、下都保留5行
 set scrolloff=5
 
@@ -237,7 +236,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exec "normal! 
 " colorscheme snazzy
 set t_Co=256
 set background=light
-" colorscheme dracula
+colorscheme dracula
 
 " 去掉工具栏、菜单栏
 set guioptions-=T
@@ -256,7 +255,7 @@ noremap <LEADER><CR> :nohlsearch<CR>
 " noremap l u
 " noremap L U
 
-" map ; :
+map ; :
 map s <nop>
 map S :w<CR>
 map Q :q<CR>
@@ -403,13 +402,13 @@ map <silent> T :TagbarOpenAutoClose<CR>
 " ===
 " for normal mode
 source ~/.vim/snippits.vim
-nmap <silent> <LEADER>mp <Plug>MarkdownPreview
+nnoremap <silent> <LEADER>mp <Plug>MarkdownPreview
 " for insert mode
-nmap <silent> <LEADER>mp <Plug>MarkdownPreview
+inoremap <silent><LEADER>mp <Plug>MarkdownPreview
 " for normal mode
-nmap <silent> <LEADER>smp <Plug>StopMarkdownPreview
+nnoremap <silent> <LEADER>smp <Plug>StopMarkdownPreview
 " for insert mode
-nmap <silent> <LEADER>smp <Plug>StopMarkdownPreview
+inoremap <silent> <LEADER>smp <Plug>StopMarkdownPreview
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
